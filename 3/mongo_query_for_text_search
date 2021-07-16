@@ -1,0 +1,11 @@
+
+
+
+// first we need to indexed the field name therefore for doing so :
+
+db.col_name.createIndex({field_name:'text'})
+
+
+// now we can find search the text by using query: 
+
+db.col_name.find({$text:{$search:"seacrh text"}})
